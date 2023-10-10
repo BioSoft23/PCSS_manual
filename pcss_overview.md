@@ -14,7 +14,7 @@ Po wejściu na serwer, użytkownik znajduje się w katalogu domowym - `/home/use
 Ponadto, nie powinno się tutaj wykonywać żadnych obliczeń ani w zasadzie żadnych innych operacji, ponieważ jesteśmy wtedy niejako na ograniczonej obliczeniowo maszynie, która służy głównie do nawigacji po przestrzeni plików i włączaniu zadań na węzłach. Można to zobaczyć wpisując polecenie `htop`. Przykładowo, widać, że ilość dostępnych wątków jest mała:
 
 <p align="center">
-<img alt="htop w home" src="./pcss_tutorial_img/htop_home-0.png">
+<img alt="htop w home" src="./img/htop_home-0.png">
 </p>
 
 Zatem, powinniśmy się ograniczyć tutaj do wykonywania co najwyżej najprostszych operacji na plikach i katalogach - usuwanie, kopiowanie, tworzenie, zmiana nazw i włączanie prostych skryptów basha.
@@ -59,21 +59,21 @@ Oprócz `archive`, pozostałe przestrzenie w trakcie trwania grantu nie mają zn
   lfs quota -h -p <numer_grantu> <pelna_fizyczna_sciezka_do_folderu_grnatu_przez_project_data>
   ```
   <p align="center">
-    <img alt="htop w home" src="./pcss_tutorial_img/pd_quota-0.png">
+    <img alt="htop w home" src="./img/pd_quota-0.png">
     </p>
 - `scratch`
   ```
   lfs quota -h -p <numer_grantu>0000 <pelna_fizyczna_sciezka_do_folderu_grnatu_przez_scratch>
   ```
   <p align="center">
-    <img alt="htop w home" src="./pcss_tutorial_img/scr_quota-0.png">
+    <img alt="htop w home" src="./img/scr_quota-0.png">
     </p>
 - `archive`
   ```
   getfattr -n ceph.quota <pelna_fizyczna_sciezka_do_folderu_grnatu_przez_archive>
   ```
   <p align="center">
-    <img alt="htop w home" src="./pcss_tutorial_img/arc_quota-0.png">
+    <img alt="htop w home" src="./img/arc_quota-0.png">
     </p>
 
     Na powyższym screenie widać, że podane polecenie jest możliwer do wykonania tylko dla `archive`.

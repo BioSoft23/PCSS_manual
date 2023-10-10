@@ -13,7 +13,7 @@ srun --pty /bin/bash
 ```
 
 <p align="center">
-<img alt="htop w home" src="./pcss_tutorial_img/slurm_srun1-0.png">
+<img alt="htop w home" src="./img/slurm_srun1-0.png">
 </p>
 
 Warto zauważyć, że przy nazwie użytkownika zmienia się maszyna - na początku po logowaniu jest to zawsze `@eagle`, a po uruchomieniu zadania jest tam identyfikator węzła - tutaj `@e1170`
@@ -53,7 +53,7 @@ Operacje, które chcemy wykonać, należy opatrzeć w skrypt o specjalnej strukt
 - przygotowanie modułów (komenda `module`), środowisk (np. pythona komendą `source`), ścieżek (np. eksportowanie do PATH) dla programów - jest to ważne, ponieważ po każdym zakończeniu zadania wszystkie tego typu ustawienia są zapominane
 - docelowe polecenia, które chcemy wykonać
 
-Wzór takiego skryptu jest dostępny tutaj.
+Wzór takiego skryptu jest dostępny [tutaj](./examples/example.sl).
 
 Uruchomienie skryptu jest następujące:
 
@@ -70,7 +70,7 @@ Submitted batch job 29407552
 > **Note**
 > Jeżeli wiemy, że będziemy mogli sprawdzać statusu zadania, ale chcielibyśmy nadal go znać, to można zlecić informowanie o statusie przez maila. Dokładny opis raportowania przez mail znajduje się na [WIKI KDM](https://wiki.man.poznan.pl/kdm/Status_zadania_-_mail). Również w przykładowym skrypcie znaduje się ta opcja.
 
-Aby zlecić wykonanie zadania na wielu plikach, można utworzyć skrypt basha, który w pętli będzie zlecał zadania zdefiniowane w skrypcie slurm. Wzór dostępny tutaj.
+Aby zlecić wykonanie zadania na wielu plikach, można utworzyć skrypt basha, który w pętli będzie zlecał zadania zdefiniowane w skrypcie slurm.
 
 > **Warning**
 > Skrypt kolejkujący zadanie musi mieć znaki przewania linii zgodne ze systemami Unix, czyli LF. Koniecznie trzeba zwrócić na to uwagę, gdy skrypt taki pisze się w systemie Windows (domyślnie jest tam używany CRLF).
@@ -84,7 +84,7 @@ squeue -u <nazwa_uzytkownika>
 ```
 
 <p align="center">
-<img alt="htop w home" src="./pcss_tutorial_img/slurm_queue-0.png">
+<img alt="htop w home" src="./img/slurm_queue-0.png">
 </p>
 
 Jak widać powyżej, nawet zadanie interaktywne jest tam ujęte i otrzymuje swój numer identyfikacyjny (JOBID).
@@ -105,7 +105,7 @@ Można uzuskać dodatkowe informacje o zadaniu takie jak:
   - nazwy plików z wyjściem (`-o`; StdOut) i błędami (`-e`; StdErr)
 
 <p align="center">
-<img alt="htop w home" src="./pcss_tutorial_img/slurm_scontrol-0.png">
+<img alt="htop w home" src="./img/slurm_scontrol-0.png">
 </p>
 
 W razie przypadku, gdy coś pójdzie nie tak, można anulować zadanie za pomocą:
@@ -114,4 +114,4 @@ W razie przypadku, gdy coś pójdzie nie tak, można anulować zadanie za pomoc�
 scancel <JOBID>
 ```
 
-Taka komenda, naturalnie, przerywa wykonywanie tylko jednego zadania. Zdarza się zlecanie wielu zadań równolegle, na wielu plikach i wtedy trzeba je wszystkie usunąć. W tym celu stworzyłem skrypt basha, który pozwala na usuwanie wszystkich aktywnych zadań lub zadań o określonej nazwie. {link do skryptu}
+Taka komenda, naturalnie, przerywa wykonywanie tylko jednego zadania. Zdarza się zlecanie wielu zadań równolegle, na wielu plikach i wtedy trzeba je wszystkie usunąć. W tym celu stworzyłem [skrypt basha](./examples/cancel_jobs.sh), który pozwala na usuwanie wszystkich aktywnych zadań lub zadań o określonej nazwie. 
