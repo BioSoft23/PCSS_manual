@@ -37,5 +37,5 @@ Następnie należy przejść do katalogu z rozpakowanymi plikami i uruchomić pl
 > ```
 > export PATH="$PATH:/home/users/<nazwa_uzytkownika>/<sciezka_do_katalogu_z_programem>"
 > ```
-> Kompletne kroki potrzebne do ustawienia oprogramowania i zlecenia zadania znajdują się [tutaj](./example/example.sl). 
+> Kompletne kroki potrzebne do ustawienia oprogramowania i zlecenia zadania znajdują się [tutaj](./examples/example.sl). 
 > Może to być również konieczne do wykonania po instalacji z kodu źródłowego.
