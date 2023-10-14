@@ -2,6 +2,20 @@
 
 Instalacja oprogramowania nie jest tak prosta jak na komputerze stacjonarnym. Nie można korzystać z instalacji z repozytoriów oraz graficznych instalatorów. Ponadto środowiska automatyzujące instalacje, takie jak np. conda nie działają.
 
+## Spis treści
+
+<details>
+<summary>Kliknij by rozwinąć</summary>
+
+- [Oprogramowanie na serwerze](#oprogramowanie-na-serwerze)
+  - [Spis treści](#spis-treści)
+  - [Preinstalowane moduły](#preinstalowane-moduły)
+  - [Instalacja oprogramowania](#instalacja-oprogramowania)
+    - [Instalacja z kodu źródłowego](#instalacja-z-kodu-źródłowego)
+    - [Instalacja z paczek binarnych](#instalacja-z-paczek-binarnych)
+
+</details>
+
 ## Preinstalowane moduły
 
 Na WIKI KDM znajduje [artykuł](https://wiki.man.poznan.pl/kdm/Modu%C5%82y) dobrze opisujący obsługę i zarządzanie modułami preinstalowanymi na serwerze.

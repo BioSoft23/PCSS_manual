@@ -2,7 +2,21 @@
 
 Wszelkie zadania obliczeniowe na Eagle są kolejkowane przez system SLURM. To oznacza, że każde obliczenie musi być zlecone, a tym zleceniem jest przydział zasobów, czyli przydział pamięci oraz procesorów. W bardzo uproszczonej wersji - czekamy na "komputer", który będzie przeprowadzał obliczenia. Z tego też powodu, wszystkie ustawienia wykonane na koncie użytkownika na maszynie osługującej system plików nie zostaną zapisane (np. wyeksportowane ścieżki w PATH).
 
-Zadania w tym systemie można wykonywać na 2 sposoby: interaktywnie oraz zlecając do wykonania skrypt z zestawem poleceń.
+Zadania w tym systemie można wykonywać na dwa sposoby: interaktywnie oraz zlecając do wykonania skrypt z zestawem poleceń.
+
+
+## Spis treści
+
+<details>
+<summary>Kliknij by rozwinąć</summary>
+
+- [System kolejkowy SLURM](#system-kolejkowy-slurm)
+  - [Spis treści](#spis-treści)
+  - [Zlecanie zadań interaktywnych](#zlecanie-zadań-interaktywnych)
+  - [Zlecanie zadań w skrypcie](#zlecanie-zadań-w-skrypcie)
+  - [Monitorowanie i zarządzanie zleconymi zadaniami](#monitorowanie-i-zarządzanie-zleconymi-zadaniami)
+
+</details>
 
 ## Zlecanie zadań interaktywnych
 

@@ -6,6 +6,23 @@ W tym artykule nie będziemy przedstawiać sobie architektury, ani tego jak dok�
 > Artykuł stworzony na podstawie https://wiki.man.poznan.pl/kdm/Dane_na_klastrze_Eagle
 > Wiele kwestii jest opisane na WIKI KDM i będziemy odsyłać do stosownych sekcji w celu uzyskania szczegółowych informacji. Z drugiej strony, wiele rzeczy warto opisać od innej strony, ponieważ WIKI KDM jest napisana momentami chaotycznie i czasem trudno w niej znaleźć potrzebne informacje.
 
+
+## Spis treści
+
+<details>
+<summary>Kliknij by rozwinąć</summary>
+
+- [Podstawy Eagla](#podstawy-eagla)
+  - [Spis treści](#spis-treści)
+  - [Struktura katalogów](#struktura-katalogów)
+    - [Katalog domowy](#katalog-domowy)
+    - [Przestrzenie robocze](#przestrzenie-robocze)
+  - [Sprawdzanie zużycia przestrzeni w grancie](#sprawdzanie-zużycia-przestrzeni-w-grancie)
+  - [Poprzednia struktura w skrócie](#poprzednia-struktura-w-skrócie)
+  - [Szczegóły sprzętowe dostępnych węzłów](#szczegóły-sprzętowe-dostępnych-węzłów)
+
+</details>
+
 ## Struktura katalogów
 
 ### Katalog domowy

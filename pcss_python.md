@@ -1,5 +1,18 @@
 # Obsługa Pythona
 
+## Spis treści
+
+<details>
+<summary>Kliknij by rozwinąć</summary>
+
+- [Obsługa Pythona](#obsługa-pythona)
+  - [Spis treści](#spis-treści)
+  - [Standardowa instalacja środowiska (najlepsza opcja)](#standardowa-instalacja-środowiska-najlepsza-opcja)
+  - [Instalacja paczek dla użytkownika](#instalacja-paczek-dla-użytkownika)
+  - [Instalacja nowej wersji pythona](#instalacja-nowej-wersji-pythona)
+
+</details>
+
 ## Standardowa instalacja środowiska (najlepsza opcja)
 
 1. Aby móc aktywować Pythona, trzeba uruchomić interaktywny tryb:
@@ -42,6 +55,10 @@ python/3.9.2
 ```bash
 python
 ```
+
+> **Warning**
+> Jeżeli `python` będzie pokazywał wersję 2.x.x Pythona, to wtedy należy używać dalej `python3`, aby faktycznie używać aktywowanego pythona w wersji 3. Po utworzeniu i aktywowaniu środowiska można znowu używać `python`.
+
 
 4. Tworzymy środowisko pythona i je aktywujemy:
 
